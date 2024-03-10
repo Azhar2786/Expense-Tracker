@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.selected{
+    transform: scale(1.10);
+    font-size: 15px;
+}
+
+.transaction_list {
+    max-height: 300px; 
+    overflow-y: auto; 
+}
+
+.transaction_list::-webkit-scrollbar{
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#submitButton:hover{
+    transform: scale(1.02);
+}
+
+.closeButton:hover{
+    transform: scale(1.2);
+}
+
+.container{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    
+}
+
+.trans_amount::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media (min-width: 349px) {
+    .amount-field{
+        width: 50%;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" rel="stylesheet"><link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    
+</head>
+<body class="bg-black">
+
+    <div class="container mx-auto px-4 py-8">
+
+        <div class="top_section  md:w-[90%] lg:w-[80%] md:mx-auto bg-gray-800 text-white rounded-lg p-4 md:p-8 mb-8">
+            <form type="submit" id="transactionform" class="flex flex-col md:flex-row gap-4 justify-center items-center md:gap-7">
+                <div class="w-full md:w-[85%] flex flex-col md:flex-row gap-4">
+                    <div class="w-full flex justify-between bg-white rounded-md md:w-[60%]">
+                        <input type="number" placeholder="Enter amount" id="amount" class="input-field1 amount-field flex-1 mr-2 rounded-md p-2 text-black">
+                        <div class="flex gap-1">
+                            <button type="button" id="plusButton" class="button min-w-[40px] bg-green-500 px-3 py-2 text-white rounded-lg">
+                                <i class="ri-add-line"></i>
+                            </button>
+                            <button type="button" id="minusButton" class="button min-w-[40px] bg-red-500 px-3 py-2 text-white rounded-lg">
+                                <i class="ri-subtract-line"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <input type="text" placeholder="Title" id="title" class="input-field md:w-[42.5%] flex-1 text-black rounded-md p-2">
+                </div>
+                <button type="submit" id="submitButton" class="bg-green-600  flex items-center justify-center text-white rounded-lg px-4 py-2 w-full md:w-[10%] md:text-[20px] text-2xl font-extrabold md:font-bold mt-3   md:mt-0">Add</button>
+            </form>
+    
+            <div class="total_amount mt-4 md:mt-8">
+                <div class="flex justify-between">
+                    <h1 id="total_ruppes" class="font-bold">Total: Rs 300</h1>
+                    <div class="flex gap-2">
+                        <h1 id="spent_amount" class="font-bold text-red-600">Spent: 0</h1>
+                        <h1 id="gained_amount" class="font-bold text-green-600">Gained: 324</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="transaction bg-gray-800 text-white rounded-lg p-4 md:p-8 md:w-[90%] lg:w-[80%] md:mx-auto">
+            <div id="heading" class="text-center text-2xl font-bold mb-4 border-b-2 border-white">
+                Transaction
+            </div>
+    
+            <div class="transaction_list">
+                <ul id="itemlists" class="list flex flex-col gap-1 ">
+                    
+                </ul>
+            </div>
+        </div>
+    
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
