@@ -113,7 +113,7 @@ function render(){
                 </div>
 
                 <button id="${expense.id}" class="w-[30px] h-[30px] delete_button rounded-full bg-gray-500 text-white flex items-center  justify-center closeButton">
-                <i class="ri-close-line hover:bg-${expense.color}-500"></i>
+                <i class="ri-close-line "></i>
                 </button>
             </div>
 
